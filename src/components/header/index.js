@@ -5,11 +5,14 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import LanguageIcon from '@mui/icons-material/Language';
 import BasicMenu from "./ProfileMenu";
 import SimpleBottomNavigation from "./bottomNav";
+import MobileSearchBar from "../MobileSearchBar";
+
+
 
 function Header() {
   return (
     <div className='navbar'>
-      {/* <img src={logo} alt='logo' className='navbar-logo'/>
+      <img src={logo} alt='logo' className='navbar-logo'/>
       <div className='search-bar'>
         <div className='search-bar-text'>Anywhere</div>
         <div className='search-bar-text'>Any week</div>
@@ -26,8 +29,9 @@ function Header() {
         <div className='profile-div'>
             <BasicMenu />
         </div>
-      </div> */}
-      <SimpleBottomNavigation/>
+      </div>
+      <MobileSearchBar />
+      <SimpleBottomNavigation />
     </div>
   )
 }

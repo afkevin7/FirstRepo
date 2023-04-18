@@ -5,6 +5,8 @@
     padding: 1rem 3rem ;
     position: sticky;
     top: 0;
+    background-color: var(--white);
+    z-index: 1000;
 }
 
 .navbar-logo{
@@ -81,10 +83,21 @@
     color: var(--dfont-grey);
 }
 .bottom-nav{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    border-top: 1px solid var(--grey);
-    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+.navbar,.profile-container,.search-bar{
+    display: none;
+}
+
+    .bottom-nav{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid var(--grey);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+    }
 }

@@ -1,0 +1,37 @@
+.filter-div{
+    border-top: 1px solid var(--grey);
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; 
+}
+.links-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+.links-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    opacity: 0.5;
+    border-bottom: 1px solid var(--white);
+    min-width: 93px;
+}
+.links-box:hover,.selected-box{
+    opacity: 1;
+    border-bottom: 1px solid var(--black);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.links-label{
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--dfont-grey);
+}
+.selected-label{
+    color: var(--black);
+}

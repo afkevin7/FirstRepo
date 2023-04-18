@@ -1,0 +1,40 @@
+.cards-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 3rem;
+    gap: 1rem;
+}
+.card-box{
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+.swiper-container{
+    height: 230px;
+    width: 230px;
+    overflow: hidden;
+}
+.card-img{
+    height: 230px;
+    width: 230px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+.card-info-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.card-rating{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.card-des{
+    display: flex;
+    align-items: flex-start;
+}
+.card-box .swiper-pagination-bullet-active{
+    background-color: var(--white) !important;
+}
